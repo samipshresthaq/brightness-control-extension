@@ -1,0 +1,22 @@
+{
+  "name": "Web Brightness Controller",
+  "version": "1.0.0",
+  "description": "Control your screen brightness with a single click",
+  "manifest_version": 3,
+  "author": "Samip Shrestha",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Brightness Controller"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "host_permissions": ["http://*/*", "https://*/*"]
+}

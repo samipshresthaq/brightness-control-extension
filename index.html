@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brightness Controller</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="slidecontainer">
+      <label class="sliderLabel" for="brightnessRange">Brightness Level</label>
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="100"
+        class="slider"
+        id="brightnessRange"
+      />
+      <div id="siderValue"></div>
+    </div>
+  </body>
+  <script src="./popup.js"></script>
+</html>
