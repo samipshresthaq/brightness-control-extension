@@ -9,12 +9,12 @@
     "default_title": "Brightness Controller"
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "js/background.js"
   },
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      "js": ["content-script.js"]
+      "js": ["js/content-script.js"]
     }
   ],
   "permissions": ["activeTab", "scripting", "tabs"],
