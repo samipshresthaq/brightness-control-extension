@@ -18,14 +18,15 @@
       const domain = url.hostname;
 
       body.style.filter = "brightness(" + options.brightnessValue + "%)";
-      localStorage.setItem(domain, options.brightnessValue);
+      chrome.storage.local.set({
+        [domain]: options.brightnessValue,
+      });
     }
 
     if (action === "updateBrightnessFromStorage") {
-      const brightnessValue = localStorage.getItem(options.domain) || 100;
-      if (brightnessValue) {
-        body.style.filter = "brightness(" + brightnessValue + "%)";
-      }
+      chrome.storage.local.get([options.domain]).then((brightnessValue) => {
+        body.style.filter = "brightness(" + brightnessValue || 100 + "%)";
+      });
     }
 
     return true;
