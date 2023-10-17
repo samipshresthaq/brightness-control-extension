@@ -10,12 +10,15 @@ Control Brightness of a Website according to your preference!
 2. Unzip `brightness-control-extension-main.zip`.
 3. Type `chrome://extensions` in your URL address bar
 4. Activate Developer Mode
+
    <img width="173" alt="image" src="/images/dev-mode.png">
 
 5. Click Load Unpacked
+
    <img width="466" alt="image" src="/images/unpacked.png">
 
 6. Select the `brightness-control-extension-main` folder
 
 7. Extension is ready to use
+
    <img width="100%" alt="image" src="/images/screenshot.png">
