@@ -18,4 +18,4 @@ Control Brightness of a Website according to your preference!
 6. Select the `brightness-control-extension-main` folder
 
 7. Extension is ready to use
-   <img width="100%" alt="image" src="/images/unpacked.png">
+   <img width="100%" alt="image" src="/images/screenshot.png">
